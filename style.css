@@ -1,0 +1,377 @@
+/*fonts from google*/
+/*first font for most thigs*/
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Playfair Display', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Playfair+Display&display=swap');
+
+
+:root{
+  --primary-color: #ff697d;
+  --light-gray: #adadad;
+  --text-color: #7a1212;
+  --border-color: #000140;
+  --blue-color:#8BA1F7;
+  --bebas: "Bebas Neue", cursive;
+  --lobster: "Lobster", cursive;
+  --playfair: "playfair Display", serif;
+}
+.primary-color{
+  color: var(--primary-color);
+}
+
+.bg-primary-color{
+  background-color: var(--primary-color) !important;
+}
+.text-color{
+  color: var(--text-color);
+}
+.font-bebas{
+  font-family:var(bebas);
+}
+.font-lobster{
+  font-family:var(lobster);
+}
+.font-playfair{
+  font-family:var(playfair);
+}
+
+
+/*header*/
+
+header{
+  background-color: var(--primary-color);
+  font-family: var(--bebas);
+}
+
+header.site-title{
+  font-family:var(--lobster);
+  font-size:2em;
+}
+
+.container .dropdown-toggle,
+.container  .dropdown-toggle,{
+  font-size:1em;
+}
+.header-links a{
+  font-size:1.3em;
+  text-decoration: none;
+  color: white;
+}
+/*nav menu*/
+.nav-item{
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
+
+/**slider one**/
+.site-slider{
+  position:relative;
+}
+.position-top{
+  position: absolute;
+  top: 40%;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  margin:0 1rem;
+  opacity:0;
+  transition: opacity 1s ease;
+}
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+  opacity:1;
+}
+
+.right-0{
+  right:0;
+}
+
+/**second slider**/
+
+.site-slider-two{
+  position: relative;
+  top:30%;
+}
+.site-slider-two .product{
+  height:25rem;
+  position:relative;
+  overflow:hidden;
+}
+.site-slider-two .product img{
+  width: 70%;
+  margin: auto;
+}
+.site-btn.btn-span{
+  padding:0.8rem 1.9rem;
+  border-radius: 4rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--light-gray);
+  color: black;
+}
+.site-slider-two{
+  margin-bottom:25px;
+}
+.slider-two .slick-track .product:hover span{
+  background-color: var(--primary-color);
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  margin:0;
+  padding: 0;
+  background-color: var(--blue-color)
+}
+h2{
+  text-align: center;
+}
+/*store*/
+#shop{
+  background-color: var(--primary-color);
+  display:inline-block;
+  width:100%;
+  font-family: var(--playfair);
+}
+.shopping{
+  position: relative;
+}
+.priceing {
+  position:absolute;
+  top:10%;
+}
+
+.discription{
+  text-align:center;
+  font-family:var(--bebas);
+  font-size: 1.25em
+}
+.store-title{
+  display: none;
+}
+.price{
+  padding-right:50px;
+  margin-left:20px;
+  font-size:1.2em;
+
+}
+/*
+.shop-item-buton{
+  margin-left:50px;
+}
+/*C is ther cart name*/
+#cart{
+  margin-top:25px;
+  background-color:var(--blue-color);
+  font-family: var(--playfair);
+  padding-bottom:5px;
+}
+.cart-header{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.cart-column{
+  display:flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right:1.5em;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-left:1.5em;
+}
+.cart-row{
+  display:flex;
+  padding-top: 20px;
+}
+.cart-item{
+  width:45%;
+}
+.cart-price{
+  width:20%;
+  font-size: 1.2em;
+}
+.cart-quantity{
+  width:35%;
+  align-items: center;
+}
+.cart-item-title{
+  color: ;
+  margin-left:.5em;
+  font-size: 1.2em;
+}
+.cart-item-image{
+  width:20%;
+  height:auto;
+  border-radius: 10px;
+}
+
+.btn-danger{
+  background-color:var(--light-gray);
+  border:none;
+  border-radius: .32em;
+}
+.b-danger:hover{
+  background-color:var(--primary-color);
+}
+.cart-quantity-input{
+  width:55px;
+  border-radius: 5px;
+  padding:0px;
+  margin-right: 20px;
+}
+.cart-total{
+  text-align: end;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.cart-total-title{
+  font-weight: bold;
+  font-size:1.5em;
+  color:black;
+  margin-right:20px;
+}
+.cart-total-price{
+  font-weight: bold;
+  font-size:1.3em;
+  margin-right: 20px;
+}
+.btn-primary{
+  display:block;
+  margin:40px auto 80px auto;
+  border-radius: 5px;
+  font-size:1.75em;
+  background-color: var(--light-gray);
+}
+.btn-primary:hover{
+  background-color:var(--primary-color);
+}
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column{
+  border:none;
+}
+
+/*had to change my html
+h3{
+  border-bottom: 1px solid black;
+}
+.removebtn{
+  border-radius: 5px;
+  background-color: var(--light-gray);
+  float:right;
+  margin-right: 50px;
+}
+
+.removebtn:hover{
+  background-color:var(--primary-color);
+}
+#cart input{
+  width:25%
+}
+.total{
+  height:40px;
+  text-align:end;
+  font-size:2em;
+  margin-right:40px;
+  font-family: var(--playfair)
+}
+
+.item img{
+  width: 25%;
+  margin-bottom: 25px;
+}
+.purchasebtn{
+  float: center;
+}
+*/
+/*contact us*/
+
+#contact{
+  background-color:var(--primary-color);
+}
+#submit:hover{
+  background-color: var(--primary-color);
+}
+#submit{
+  align-items: center;
+ margin:10px auto 20px auto;
+}
+
+label{
+  float:left;
+  width: 8em;
+  padding-right:1em;
+}
+/*footer*/
+
+footer{
+  background-color: var(--blue-color);
+}
+.f{
+  color:var(--primary-color);
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
+.face{
+  font-size: 75px;
+  text-align: center;
+  margin-top: 50px;
+  color: var(--primary-color);
+}
+.mail{
+  text-align: center;
+  font-size: 75px;
+  margin-top: 50px;
+  color: var(--primary-color);
+}
+.linked{
+  text-align:center;
+  font-size:75px;
+  margin-top: 50px;
+  color: var(--primary-color);
+}
+.p{
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+
+@media only screen and (max-width:1200px){
+  .site-slider-two .product img{
+    width: 90%;
+    margin: auto;
+  }
+}
+/*  css for tablets  */
+
+@media only screen and (max-width:1024px){
+  .site-slider-two .product img{
+    width: 90%;
+    margin: auto;
+  }
+}
+/* css for mobile */
+@media only screen and (max-width:768px){
+  .discription{
+display:none;
+  }
+  .store img{
+    width: 55%;
+    margin-bottom: 25px;
+  }
+  .site-slider-two .product img{
+    width: 90%;
+    margin-bottom:0px;
+  }
+  #shop{
+    margin-top:0px;
+  }
+}
